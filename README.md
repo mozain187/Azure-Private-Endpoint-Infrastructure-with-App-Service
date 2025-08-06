@@ -96,6 +96,7 @@ Component	Screenshot
 ![health check](screenshots/webapphealthcheck.png)
 ![private end points prove](screenshots/peprove.png)
 ![pipline prove](screenshots/gitprove.png)
+![portal slots prove](screenshots/slotsrunning.png)
 
 
 Screenshots demonstrate successful deployment and testing of all components
