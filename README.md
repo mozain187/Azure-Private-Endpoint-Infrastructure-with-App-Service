@@ -9,7 +9,7 @@ App Service: Node.js application with staging slots for blue-green deployments
 Infrastructure as Code: Modular Bicep templates for reproducible deployments
 Private DNS: Custom DNS zones for private endpoint resolution
 
-🏛️ Architecture
+# 🏛️ Architecture
 ┌─────────────────────────────────────────────────────────────┐
 │                     Virtual Network (10.0.0.0/16)          │
 ├─────────────────────────────────────────────────────────────┤
