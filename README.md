@@ -1,14 +1,14 @@
-Azure Private Endpoint Infrastructure with App Service
-🏗️ Project Overview
+## Azure Private Endpoint Infrastructure with App Service
+# 🏗️ Project Overview
 This project demonstrates a complete Azure infrastructure setup featuring private endpoints, secure networking, and a Node.js application deployment using Infrastructure as Code (IaC) with Azure Bicep templates.
 
-🌟 Key Features
+# 🌟 Key Features
 Private Endpoints: Secure connectivity to Azure SQL Database and File Share storage
 Network Security: Comprehensive NSG rules and subnet segmentation
 App Service: Node.js application with staging slots for blue-green deployments
 Infrastructure as Code: Modular Bicep templates for reproducible deployments
 Private DNS: Custom DNS zones for private endpoint resolution
-🏛️ Architecture
+# 🏛️ Architecture
 ┌─────────────────────────────────────────────────────────────┐
 │                     Virtual Network (10.0.0.0/16)          │
 ├─────────────────────────────────────────────────────────────┤
@@ -26,7 +26,7 @@ Private DNS: Custom DNS zones for private endpoint resolution
             │Azure SQL DB │  │File Share   │ │Private DNS│
             │(Private)    │  │Storage      │ │Zones      │
             └─────────────┘  └─────────────┘ └───────────┘
-📁 Project Structure
+# 📁 Project Structure
 ├── main.bicep              # Main orchestration template
 ├── modules/
 │   ├── vnet.bicep          # Virtual network and subnets
@@ -38,7 +38,7 @@ Private DNS: Custom DNS zones for private endpoint resolution
 ├── app/                    # Node.js application source
 ├── screenshots/            # Deployment and testing evidence
 └── README.md              # This file
-🚀 Deployed Resources
+# 🚀 Deployed Resources
 Network Infrastructure
 Virtual Network: Segmented subnets for different tiers
 Network Security Groups: Granular traffic control
@@ -55,7 +55,7 @@ CI/CD Pipeline
 GitHub Actions: Automated deployment workflow
 Infrastructure Deployment: Bicep templates via GitHub Actions
 Application Deployment: Automated app deployment to staging and production slots
-🔧 Deployment Instructions
+#🔧 Deployment Instructions
 Prerequisites
 bash
 # Install Azure CLI
@@ -76,7 +76,7 @@ yaml
 # The workflow automatically deploys on push to main branch
 # See .github/workflows/deploy.yml for full pipeline
 git push origin main
-🧪 Testing & Validation
+# 🧪 Testing & Validation
 Private Endpoint Connectivity
 ✅ SQL Database accessible only through private endpoint
 ✅ File share connectivity via private network
@@ -89,38 +89,34 @@ Security Validation
 ✅ Public access disabled on SQL Database
 ✅ NSG rules preventing unauthorized access
 ✅ Network segmentation enforced
-📸 Screenshots & Evidence
+# 📸 Screenshots & Evidence
 Component	Screenshot
-Resource Group Overview	Show Image
-Private Endpoints	Show Image
-App Service Slots	Show Image
-Network Topology	Show Image
-Application Running	Show Image
-GitHub Actions Pipeline	Show Image
+![production app live ](screenshots/webappprod.png)
+![staging app live ](screenshots/webapppstag.png)
+![health check](screenshots/webapphealthcheck.png)
+![private end points prove](screenshots/peprove.png)
+![pipline prove](screenshots/gitprove.png)
+
+
 Screenshots demonstrate successful deployment and testing of all components
 
-🎯 Key Achievements
+# 🎯 Key Achievements
 Zero Public Exposure: All data services accessible only via private endpoints
 Automated Deployment: Complete IaC implementation with Bicep + GitHub Actions CI/CD
 Production-Ready: Staging slots enable zero-downtime deployments
 Secure Networking: Multi-layered security with NSGs and private DNS
 Scalable Architecture: Modular design supports easy expansion
 DevOps Integration: Full CI/CD pipeline with automated testing and deployment
-🛠️ Technologies Used
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
  Add Azure Key Vault for secrets management
  Implement Application Gateway for advanced routing
  Add Azure Monitor and Log Analytics
  Configure auto-scaling policies
- Implement CI/CD pipeline with GitHub Actions ✅ Completed
-📞 Contact
+ 
+# 📞 Contact
 Feel free to connect with me on LinkedIn to discuss this project or Azure architecture!
+https://www.linkedin.com/in/mohammed-zain-661a86215/
 
 This project demonstrates enterprise-grade Azure infrastructure patterns with security-first design principles.
 
